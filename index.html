@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia noW</title>
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+
+    <style media="screen">
+      html {
+        font-size: 14px;
+      }
+
+      body {
+        margin-bottom: 250px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        html {
+          font-size: 16px;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        html {
+          font-size: 20px;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        html {
+          font-size: 28px;
+        }
+      }
+
+      .dropdown-menu .dropdown-item {
+        cursor: pointer;
+        word-wrap: normal;
+      }
+
+      #search-toggle {
+        cursor: pointer;
+        display: none;
+      }
+
+      .search-form {
+        display: none;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+
+          <br><br>
+
+          <h1 class="display-4 text-center">Wikipedia noW</h1>
+          <p class="lead text-center">Search the world's free encyclopedia</p>
+
+          <img src="/dist/images/logo2x.png"
+               class="img-fluid mx-auto d-block mb-3 w-50"
+               alt="Responsive image">
+
+          <br><br>
+
+          <!-- The search form -->
+          <form class="search-form" id="search-form" autocomplete="off">
+            <div class="row">
+              <div class="col-7 offset-1">
+                <div class="dropdown" tabindex="0">
+                  <input type="text"
+                         class="form-control form-control-lg"
+                         id="search-input"
+                         placeholder="Type something..."
+                         aria-haspopup="true"
+                         aria-expanded="false"
+                         tabindex="-1">
+
+                  <div id="results-dropdown" class="dropdown-menu">
+                    <!-- Results show up here -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-2">
+                <button type="submit"
+                        class="btn btn-primary btn-lg">Search</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <p class="text-center mt-3">
+                  <button id="close" type="button" name="button" class="btn btn-link">Close</button>
+                </p>
+              </div>
+            </div>
+          </form>
+
+          <!-- Toggle search form -->
+          <button type="button"
+                  id="search-toggle"
+                  name="button"
+                  class="btn btn-lg btn-outline-primary mx-auto d-block mt-3">Search Wikipedia Now</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="/dist/js/app/bundle.js"></script>
+</html>

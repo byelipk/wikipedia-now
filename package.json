@@ -1,0 +1,34 @@
+{
+  "name": "js-async",
+  "description": "Learning async javascript",
+  "repository": "none",
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "babel src -d lib",
+    "pack": "webpack",
+    "test": "ava ./tests --verbose"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.1",
+    "node-sass": "^4.5.2",
+    "prettyjson": "^1.2.1",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "pretender": "^1.4.2",
+    "reqwest": "^2.0.5",
+    "rxjs": "^5.4.0",
+    "tether": "^1.4.0",
+    "velocity-animate": "^1.5.0",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
